@@ -1,1 +1,26 @@
 @import "tailwindcss";
+.nav-link {
+    @apply relative text-gray-700 font-semibold hover:text-gray-900 transition duration-300;
+}
+
+.nav-link::after {
+    content: '';
+    @apply absolute left-0 bottom-0 w-0 h-[3px] bg-green-500 transition-all duration-300;
+}
+
+.nav-link:hover::after {
+    @apply w-full;
+}
+/* Mobile Dropdown Links */
+.mobile-nav-link {
+    @apply relative block py-2 text-gray-700 font-medium hover:text-gray-900 transition duration-300;
+}
+
+.mobile-nav-link::after {
+    content: '';
+    @apply absolute left-0 bottom-0 w-0 h-[2px] bg-green-500 transition-all duration-300;
+}
+
+.mobile-nav-link:hover::after {
+    @apply w-full;
+}
