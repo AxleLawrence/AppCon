@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // Set EJS as template engine
 app.set("view engine", "ejs");
+app.set('views', path.join(__dirname, '../views'));
 
 // Set static folder
 app.use(express.static(path.join(__dirname, "../public")));
