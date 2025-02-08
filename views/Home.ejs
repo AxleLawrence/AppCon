@@ -15,12 +15,44 @@
   gtag('config', 'G-LL6XV83QTC');
 </script>
 </head>
-<body class="bg-gray-700 text-white text-center py-10">
-    <div class="flex items-center justify-center min-h-screen bg-gray-800">
-    <video width="600" class="" autoplay loop muted controls>
-        <source src="/videos/Jake.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    </div>
+<body class="bg-gray-100">
+
+    <nav class="bg-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-green-500 text-2xl font-bold">Agriculture</a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="text-white text-2xl md:hidden">
+                ☰
+            </button>
+
+            <!-- Nav Links -->
+            <ul id="menu" class="hidden md:flex space-x-6 text-gray-800 text-lg gap-10 pr-10">
+                <li><a href="#" class="hover:opacity-75">Home</a></li>
+                <li><a href="#" class="hover:opacity-75">Dashboard</a></li>
+                <li><a href="#" class="hover:opacity-75">Services</a></li>
+                <li><a href="#" class="hover:opacity-75">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col bg-blue-700 text-white text-lg p-4 space-y-3">
+            <a href="#" class="hover:text-gray-300">Home</a>
+            <a href="#" class="hover:text-gray-300">About</a>
+            <a href="#" class="hover:text-gray-300">Services</a>
+            <a href="#" class="hover:text-gray-300">Contact</a>
+        </div>
+    </nav>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+
 </body>
 </html>
