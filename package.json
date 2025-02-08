@@ -5,8 +5,9 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
+    "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npx tailwindcss -i ./src/input.css -o ./public/style.css --watch\" \"nodemon server/server.js\" \"browser-sync start --proxy localhost:3000 --files 'public/style.css' --inject-changes\""
   },
