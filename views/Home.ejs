@@ -14,13 +14,14 @@
 
   gtag('config', 'G-LL6XV83QTC');
 </script>
+
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 min-h-screen flex flex-col">
 
     <nav class="bg-white p-4 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
-            <a href="#" class="text-green-500 text-2xl font-bold pl-5">Agriculture</a>
+            <a href="#" class="text-green-600 text-2xl font-bold pl-5">Agriculture</a>
 
             <!-- Mobile Menu Button -->
             <button id="menu-btn" class="text-black text-3xl md:hidden">
@@ -44,15 +45,80 @@
             <a href="#" class="mobile-nav-link inline-block">Contact</a>
         </div>
     </nav>
+    <main class="flex-grow">
+        <section class="bg-white shadow-lg rounded-xl max-w-[78rem] w-full mx-auto p-14 md:p-20 flex flex-col md:flex-row items-center justify-between mt-5 md:mt-10 relative overflow-hidden">
 
-    <script>
-        const menuBtn = document.getElementById("menu-btn");
-        const menu = document.getElementById("mobile-menu");
+<!-- Top Left Leaf -->
+<img src="/icons/leaf.png" alt="Leaf"
+    class="absolute top-0 left-0 w-[40%] md:w-[30%] max-w-[200px] md:max-w-[300px] transform -translate-x-16 -translate-y-16 md:-translate-x-20 md:-translate-y-20 rotate-[130deg] opacity-90 object-contain z-20 animate-leaf-float">
 
-        menuBtn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
-    </script>
+<!-- Top Right Leaf -->
+<img src="/icons/leaf.png" alt="Leaf"
+    class="absolute top-0 right-0 w-[40%] md:w-[30%] max-w-[200px] md:max-w-[300px] transform translate-x-16 -translate-y-16 md:translate-x-20 md:-translate-y-20 rotate-[220deg] opacity-90 object-contain z-20 animate-leaf-float">
 
+<!-- Bottom Left Leaf -->
+<img src="/icons/leaf.png" alt="Leaf"
+    class="absolute bottom-0 left-0 w-[40%] md:w-[30%] max-w-[200px] md:max-w-[300px] transform -translate-x-16 translate-y-16 md:-translate-x-20 md:translate-y-20 rotate-[45deg] opacity-90 object-contain z-20 animate-leaf-float">
+
+<!-- Bottom Right Leaf -->
+<img src="/icons/leaf.png" alt="Leaf"
+    class="absolute bottom-0 right-0 w-[40%] md:w-[30%] max-w-[200px] md:max-w-[300px] transform translate-x-16 translate-y-16 md:translate-x-20 md:translate-y-20 rotate-[-45deg] opacity-90 object-contain z-20 animate-leaf-float">
+
+            <!-- Left Content -->
+            <div class="md:w-1/2 text-center md:text-left animate-fade-in">
+                <h1 class="text-5xl font-bold text-black font-serif leading-tight">Smart Plant Monitoring</h1>
+                <h2 class="text-3xl font-bold text-green-600 mt-2 font-serif">
+                    Grow healthier plants with real-time insights.
+                </h2>
+                <p class="text-gray-600 mt-4 text-lg opacity-80">
+                    Track plant health with real-time analytics, optimize watering schedules, and enhance growth with smart AI-based monitoring.
+                </p>
+                <button class="mt-6 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    Go to Dashboard
+                </button>
+                
+            </div>
+        
+            <!-- Right Image -->
+            <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+                <img src="/icons/plant.png" alt="Plant" class="max-w-xs md:max-w-md transform transition-all duration-700 animate-plant-float">
+            </div>
+        
+        </section>
+        
+
+        <footer class="bg-emerald-600 text-white py-3 mt-10 text-sm">
+            <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                
+                <!-- Logo & Description -->
+                <div>
+                    <h2 class="text-lg font-semibold">Smart Agriculture</h2>
+                    <p class="text-xs opacity-80 mt-1">Empowering farmers with smart monitoring & analytics.</p>
+                </div>
+        
+                <!-- Social Icons -->
+                <div class="flex space-x-3 mt-3 md:mt-0">
+                    <a href="#" class="hover:opacity-80 transition">
+                        <img src="/icons/facebook2.svg" alt="Facebook" class="w-4 h-4">
+                    </a>
+                    <a href="#" class="hover:opacity-80 transition">
+                        <img src="/icons/email2.svg" alt="Twitter" class="w-4 h-4">
+                    </a>
+                    <a href="#" class="hover:opacity-80 transition">
+                        <img src="/icons/linkedin1.svg" alt="LinkedIn" class="w-4 h-4">
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Copyright -->
+            <div class="text-center text-xs opacity-70 mt-2">
+                © 2025 Smart Agriculture. All Rights Reserved.
+            </div>
+        </footer>
+        
+        
+        
+    </main>
+    <script src="/JS/Home.js"></script>
 </body>
 </html>
